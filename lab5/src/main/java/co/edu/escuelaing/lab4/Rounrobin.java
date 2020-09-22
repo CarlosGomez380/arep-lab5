@@ -11,7 +11,7 @@ public class Rounrobin {
 
         HttpResponse<String> response = null;
 
-        response = Unirest.get("http://192.168.1.24:3500"+port+"/results?Cadena="+ data)
+        response = Unirest.get("http://ec2-34-230-83-190.compute-1.amazonaws.com:3500"+port+"/results?Cadena="+ data)
                 .asString();
 
         return response.getBody();
