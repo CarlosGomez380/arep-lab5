@@ -27,10 +27,11 @@ git clone https://github.com/CarlosGomez380/arep-lab5.git
 
 To change the URLs of the VM go to the class Rounrobin in lab5
 
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/URLmaquinavirtual.PNG)
 
 The mongo's IP go to the class LogService in logservice
 
-
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/URLmongo.PNG)
 
 Once finish this process, open the 2 projects' folder on the terminal with 
 
@@ -43,6 +44,8 @@ And copy:
 ```
 mvn clean install
 ```
+
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/lab5.PNG)
 
 And
 
@@ -60,7 +63,13 @@ And copy:
 mvn clean install
 ```
 
-In your EC2 get the containers, get the same ports as you'll see below:
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/logservice.PNG)
+
+Stablish conection with ypur EC2 instance
+
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/conexion.PNG)
+
+Get the containers, get the same ports as you'll see below:
 
 ```
 docker run -d -p 27017:27017 --name mongo-bd mongo
@@ -88,8 +97,11 @@ To see your containers:
 docker ps
 ```
 
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/dockerPS.PNG)
+
 Enable ports that are going to use for each service, go to the EC2's security group an open them:
 
+![](https://github.com/CarlosGomez380/arep-lab5/blob/master/images/puertos.PNG)
 
 ## Documentation JavaDoc
 
