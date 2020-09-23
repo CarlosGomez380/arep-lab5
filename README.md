@@ -88,6 +88,9 @@ To see your containers:
 docker ps
 ```
 
+Enable ports that are going to use for each service, go to the EC2's security group an open them:
+
+
 ## Documentation JavaDoc
 
 To see the javadoc generated copy:
